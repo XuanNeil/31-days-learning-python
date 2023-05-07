@@ -71,3 +71,74 @@ print(fruits[-4: -1])#["orange", "kiwi", "melon"]
 '''
 if "orange" in fruits:
     print('yes!!!')
+
+'''
+10. Change List Items
+'''
+thislist1 = ["apple", "banana", "cherry"]
+thislist1[1] = 'cherry01'
+print(thislist1)#["apple", "cherry01", "cherry"]
+
+'''
+11. Change a Range of Item Values
+'''
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+thislist[1:3] = ["blackcurrant", "watermelon"]
+print(thislist)#["apple", "blackcurrant", "watermelon", "orange", "kiwi", "mango"]
+
+listFruit2 = ['apple', 'orange', 'kiwi']
+listFruit2[1:2] = ['banana', 'cherry']
+print(listFruit2)#["apple", "banana", "cherry", "kiwi"]
+
+listFruit3 = ['apple', 'orange', 'cherry']
+listFruit3[1:3] = ['watermelon']
+print(listFruit3)#["apple", "watermelon"]
+
+'''
+12. Insert Items
+'''
+thislist03 = ["apple", "banana", "cherry"]
+thislist03.insert(2, "watermelon")
+print(thislist03)#["apple", "banana", "watermelon", "cherry"]
+
+'''
+13. Add list items
+'''
+thislist04 = ["apple", "banana", "cherry"]
+thislist04.append('orange')
+print(thislist04)#["apple", "banana", "cherry", "orange"]
+
+'''
+14. Extend List
+'''
+thislist05 = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+thislist05.extend(tropical)#["apple", "banana", "cherry", "mango", "pineapple", "papaya"]
+print(thislist05)
+
+
+'''
+15. Remove specified item
+'''
+thislistRemove = ["apple", "banana", "cherry"]
+thislistRemove.remove('banana')
+print(thislistRemove)#["apple", "cherry"]
+
+
+'''
+16. Remove specified index
+'''
+thislist06 = ["apple", "banana", "cherry"]
+thislist06.pop(1)
+print(thislist06)#["apple", "banana"]
+
+thislist07 = ["apple", "banana", "cherry"]
+del thislist07[0]
+print(thislist07)#["banana", "cherry"]
+
+'''
+17. Clear list
+'''
+thislist08 = ["apple", "banana", "cherry"]
+thislist08.clear()
+print(thislist08)#[]
